@@ -1,6 +1,8 @@
 # TodoApp
 
-TodoApp is a minimalist task management application built using React, TypeScript, HTML, and SCSS. TodoApp allows you to add, delete, and manage your todos efficiently. With a sleek interface and seamless interaction with a server for persistent storage, it ensures that your tasks are always up to date and accessible from anywhere.
+TodoApp is a minimalist task management application built using <u>React, TypeScript, HTML, and SCSS</u>. TodoApp allows you to add, delete, and manage your todos efficiently.
+
+With a sleek interface and <u>seamless interaction with a server</u> for persistent storage, it ensures that your tasks are always up to date and accessible from anywhere.
 
 ## Features & usage
 
