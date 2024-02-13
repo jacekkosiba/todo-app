@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FC } from 'react';
+import { Header, TodoList, Footer, Errors, UserWarning } from './components';
+import { useAppContext } from './context/AppContext';
+import { USER_ID } from './USER_ID';
 
-function App() {
+export const App: FC = () => {
+  const { todos } = useAppContext();
+
+  if (!USER_ID) {
+    return <UserWarning />;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+    <div className="todoapp">
+      <h1 className="todoapp__title">todos</h1>
+
+      <div className="todoapp__content">
+        <Header />
+        <TodoList />
+        {todos.length > 0 && (
+          <>
+            <Footer />
+          </>
+        )}
+      </div>
+
+      <Errors />
+      <h2 className="todoapp__title--author">
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/jacekkosiba"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
         >
-          Learn React
+          by Jacek Kosiba
         </a>
-      </header>
+      </h2>
     </div>
   );
-}
-
-export default App;
+};
