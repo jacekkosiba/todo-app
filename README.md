@@ -1,5 +1,7 @@
 # TodoApp
 
+[DEMO](https://jacekkosiba.github.io/todo-app/)
+
 TodoApp is a minimalist task management application built using <ins>React, TypeScript, HTML, and SCSS</ins>. TodoApp allows you to add, delete, and manage your todos efficiently.
 
 With a sleek interface and <ins>seamless interaction with a server</ins> for persistent storage, it ensures that your tasks are always up to date and accessible from anywhere.
@@ -34,12 +36,6 @@ npm install
 
 ```bash
 npm start
-```
-
-4. To create a production build of the application:
-
-```bash
-npm run build
 ```
 
 ## Credits
